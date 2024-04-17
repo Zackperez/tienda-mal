@@ -1,0 +1,21 @@
+---
+import { CarouselDemo } from '@/components/CaruselImagenes';
+import Layout from '../layouts/Layout.astro';
+import Hero from '@/components/Hero.astro';
+
+---
+
+<Layout title="Welcome to Astro.">
+    <Hero />
+
+    <div class="p-10 bg-slate-100 min-h-96">
+        <h1 class="text-4xl font-bold uppercase text-zinc-700 text-center">Productos</h1>
+        <div class="flex  p-10">
+            <CarouselDemo client:load/>
+
+        </div>
+
+
+    </div>
+    
+</Layout>

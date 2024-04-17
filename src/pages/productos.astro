@@ -1,0 +1,9 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Producto from '@/components/Producto';
+---
+<Layout title="Producto">
+    <div class="p-10 bg-slate-50 min-h-screen">
+        <Producto client:load/>
+    </div>
+</Layout>
